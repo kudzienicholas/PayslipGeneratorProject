@@ -9,9 +9,7 @@ This Python project automates the generation of professional payslip PDFs for em
 
 project-directory/ │ ├── employeepayslips2.xlsx # Excel file containing employee details ├── logo.png # Company logo (optional, appears on payslips) ├── generate_payslips.py # Main script ├── README.md # Project documentation └── /Payslips # Output folder for generated PDFs
 
-yaml
-Copy
-Edit
+
 
 ---
 
@@ -28,15 +26,11 @@ Edit
 ## 🔧 Requirements & Installation
 
 ### 1. **Python 3.7+**  
-Ensure Python is installed on your system. You can check with:
-```bash
-python --version
+
 2. Required Libraries
 Install the required Python libraries using pip:
 
-bash
-Copy
-Edit
+
 pip install pandas fpdf yagmail openpyxl
 📂 Excel File Format
 Ensure your Excel file (employeepayslips2.xlsx) has the following columns exactly as listed below:
@@ -81,9 +75,7 @@ Open your terminal or command prompt.
 
 Navigate to the project folder and run:
 
-bash
-Copy
-Edit
+
 python generate_payslips.py
 You’ll see logs for each email being processed and sent.
 
@@ -107,9 +99,7 @@ Email Sending:
 Sends the PDF as an attachment using yagmail with Gmail SMTP.
 
 🧪 Example Console Output
-sql
-Copy
-Edit
+
 ✅ Connected to Gmail SMTP server.
 📤 Sending to john.doe@example.com...
 ✅ Sent to john.doe@example.com
@@ -132,19 +122,3 @@ Feel free to fork the project and submit pull requests. Feedback and improvement
 Your Name / Company
 📧 kudziet221@gmail.com
 
-vbnet
-Copy
-Edit
-
-
-
-
-
-
-
-
-
-
-=======
-
->>>>>>> bce9a3f56ea4ed5d32bcf9df2fc6eed4481450a6:ReadMe
