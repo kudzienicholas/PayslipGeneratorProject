@@ -1,3 +1,4 @@
+<<<<<<< HEAD:ReadMe.md
 Here’s a professional README.md file tailored specifically for your Employee Payslip Generator project:
 
 markdown
@@ -149,3 +150,6 @@ Edit
 
 
 
+=======
+
+>>>>>>> bce9a3f56ea4ed5d32bcf9df2fc6eed4481450a6:ReadMe
