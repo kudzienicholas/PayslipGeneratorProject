@@ -1,9 +1,4 @@
-<<<<<<< HEAD:ReadMe.md
-Here’s a professional README.md file tailored specifically for your Employee Payslip Generator project:
 
-markdown
-Copy
-Edit
 # 🧾 Employee Payslip Generator & Email Sender
 
 This Python project automates the generation of professional payslip PDFs for employees and sends them directly to their email addresses. It reads data from an Excel file, calculates net salary, formats a printable payslip using `fpdf`, and sends it via Gmail using `yagmail`.
