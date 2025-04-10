@@ -1,4 +1,5 @@
 
+
 import pandas as pd
 from fpdf import FPDF
 import yagmail
@@ -42,17 +43,25 @@ class PayslipPDF(FPDF):
         self.set_xy(45, 10)
         self.set_font("Helvetica", "B", 16)
         self.set_text_color(30, 30, 30)
-        self.cell(0, 8, "Manchester Cafe", ln=True)
+        self.cell(0, 12, "Manchester Cafe", ln=True, align="C")
         self.set_x(45)
         self.set_font("Helvetica", "", 11)
         self.set_text_color(100, 100, 100)
-        self.cell(0, 8, "54 Babra Tredgold Circle, Mbare, Harare", ln=True)
+        self.cell(0, 12, "54 Babra Tredgold Circle, Mbare, Harare", ln=True, align="C")
 
         self.ln(10)
         self.set_draw_color(180, 180, 180)
         self.set_line_width(0.6)
         self.line(10, self.get_y(), 200, self.get_y())
         self.ln(8)
+
+
+        image_path = "logo.jpg"  # Path to your logo
+        image_width = 40  # Adjust as needed
+        image_height = 20  # Adjust as needed
+        x_position = 10  # 10 units from the right edge
+        y_position = 10  # 10 units from the top of the page
+        self.image(image_path, x=x_position, y=y_position, w=image_width,h=image_height)
 
     def footer(self):
         self.set_y(-20)
@@ -99,7 +108,7 @@ class PayslipPDF(FPDF):
         self.multi_cell(0, 8, "Thank you for your contribution. We appreciate your continued efforts as part of the Manchester Cafe team.")
 
 # Target folder path for PDFs
-save_path = r"C:\Users\uncommonStudent\OneDrive\Desktop\PYTHON\Payslips"
+save_path = r"C:\Users\uncommonStudent\Documents\payslip generator\Payslips"
 
 # Create the folder if it doesn't exist
 os.makedirs(save_path, exist_ok=True)
