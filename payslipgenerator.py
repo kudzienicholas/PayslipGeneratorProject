@@ -21,8 +21,8 @@ for col in expected_columns:
 df["Net Salary"] = df["Basic Salary"] + df["Allowance"] - df["Deductions"]
 
 # Email Credentials
-SENDER_EMAIL = "kudziet221@gmail.com"
-SENDER_PASSWORD = "yurevcdkvwzzeulj"  # Use a valid Gmail App Password
+SENDER_EMAIL = "" #Use your valid Email
+SENDER_PASSWORD = ""  # Use a valid Gmail App Password
 
 # Try connecting to Gmail SMTP using yagmail
 try:
